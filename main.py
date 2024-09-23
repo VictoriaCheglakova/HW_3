@@ -11,7 +11,7 @@ def size_browser():
 
 @pytest.fixture
 def open_browser():
-   browser.open_url('https://google.com.ru')
+   browser.open_url('https://google.com')
    if browser.element(by.text('Принять все')).matching(be.visible):
       browser.element(by.text('Принять все')).click()
 
